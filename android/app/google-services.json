@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "593840566794",
+    "project_id": "yello-18a1e",
+    "storage_bucket": "yello-18a1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593840566794:android:5b9375e8792f72805665f3",
+        "android_client_info": {
+          "package_name": "com.example.connect_u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593840566794-7ksdsrt3imd3osf9hnjcbccm2m4d02mh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.connect_u",
+            "certificate_hash": "7da648678f41d95aa45432fce3fe71c751d3d62e"
+          }
+        },
+        {
+          "client_id": "593840566794-vj1ktj4i41ddvq4qv679i0fifktdi1sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDXTRF_f0FsWUYZ-yGXXxIbQvCsDE8atI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593840566794-vj1ktj4i41ddvq4qv679i0fifktdi1sl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "593840566794-kc349eqfqtd9tm99nbmieh20h8tivke7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.connectu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
