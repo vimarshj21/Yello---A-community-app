@@ -1,5 +1,5 @@
 class Constants {
-  static const logoPath = 'assets/images/logo.png';
+  static const logoPath = 'assets/images/logoo.png';
   static const loginPath = 'assets/images/loginn.png';
   static const googlePath = 'assets/images/google.png';
 
