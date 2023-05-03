@@ -1,6 +1,6 @@
 class Constants {
   static const logoPath = 'assets/images/logo.png';
-  static const loginPath = 'assets/images/login.png';
+  static const loginPath = 'assets/images/loginn.png';
   static const googlePath = 'assets/images/google.png';
 
   static const bannerDefault =

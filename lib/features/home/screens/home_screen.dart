@@ -36,7 +36,7 @@ class HomeScreen extends ConsumerWidget {
           )
         ],
       ),
-      drawer: CommunityListDrawer(),
+      drawer: const CommunityListDrawer(),
     );
   }
 }

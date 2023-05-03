@@ -36,16 +36,14 @@ class LoginScreen extends ConsumerWidget {
                   height: 30,
                 ),
                 const Text(
-                  'Dive into anything',
+                  'Connect more, Grow more',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 0.5,
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
+                const SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Image.asset(
@@ -53,9 +51,7 @@ class LoginScreen extends ConsumerWidget {
                     height: 400,
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                const SizedBox(height: 20),
                 const SignInButton(),
               ],
             ),
