@@ -4,13 +4,6 @@ import 'package:connect_u/features/community/repository/community_repository.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final communityControllerProvider =
-    StateNotifierProvider<CommunityController, bool>((ref) {
-  final communityRepository = ref.watch(communityRepositoryProvider);
-  return CommunityController(
-      communityRepository: communityRepository, ref: ref);
-});
-
 class CreateCommunityScreen extends ConsumerStatefulWidget {
   const CreateCommunityScreen({super.key});
 

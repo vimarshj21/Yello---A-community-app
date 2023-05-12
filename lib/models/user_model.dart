@@ -60,9 +60,10 @@ class UserModel {
         banner: map['banner'] as String,
         isAuthenticated: map['isAuthenticated'] as bool,
         perks: map['perks'] as int,
-        awards: List<String>.from(
-          (map['awards'] as List<String>),
-        ));
+        // awards: List<String>.from(
+        //   (map['awards'] as List<String>),
+        // ));
+        awards: []);
   }
 
   String toJson() => json.encode(toMap());

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:connect_u/core/common/error_text.dart';
 import 'package:connect_u/core/common/loader.dart';
 import 'package:connect_u/features/auth/controller/auth_controller.dart';
@@ -49,12 +51,13 @@ class _MyAppState extends ConsumerState<MyApp> {
           data: (data) => MaterialApp.router(
             debugShowCheckedModeBanner: false,
             title: 'Reddit Tutorial',
-            theme: Pallete.lightModeAppTheme,
+            theme: Pallete.darkModeAppTheme,
             routerDelegate: RoutemasterDelegate(
               routesBuilder: (context) {
+                log("-------------------$data--------------");
                 if (data != null) {
                   getData(ref, data);
-                  if (userModel != null) {
+                  if (1 == 1) {
                     return loggedInRoute;
                   }
                 }
