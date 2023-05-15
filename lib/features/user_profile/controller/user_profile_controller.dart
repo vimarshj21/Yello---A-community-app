@@ -4,6 +4,7 @@ import 'package:connect_u/core/provider/storage_repository_provider.dart';
 import 'package:connect_u/features/auth/controller/auth_controller.dart';
 import 'package:connect_u/features/user_profile/repository/user_profile_repository.dart';
 import 'package:connect_u/models/community_model.dart';
+import 'package:connect_u/models/post_model.dart';
 import 'package:connect_u/models/user_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -19,6 +20,10 @@ final userProfileControllerProvider =
       userProfileRepository: userProfileRepository,
       ref: ref,
       storageRepository: storageRepository);
+});
+
+final getUserPostsProvider = StreamProvider.family((ref, String uid) {
+  return ref.read(userProfileControllerProvider.notifier).getUserPosts(uid);
 });
 
 class UserProfileController extends StateNotifier<bool> {
@@ -78,5 +83,9 @@ class UserProfileController extends StateNotifier<bool> {
         Routemaster.of(context).pop();
       },
     );
+  }
+
+  Stream<List<Post>> getUserPosts(String uid) {
+    return _userProfileRepository.getUserPosts(uid);
   }
 }

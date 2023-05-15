@@ -13,7 +13,7 @@ class AddPostScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     double cardHeightWidth = 120;
-    double iconSize = 60;
+    double iconSize = 45;
     final currentTheme = ref.watch(themeNotifierProvider);
     return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
