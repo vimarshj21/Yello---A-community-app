@@ -5,6 +5,7 @@ import 'package:connect_u/features/community/screens/edit_community_screen.dart'
 import 'package:connect_u/features/community/screens/mod_tools_screen.dart';
 import 'package:connect_u/features/home/screens/home_screen.dart';
 import 'package:connect_u/features/post/add_post_type_screen.dart';
+import 'package:connect_u/features/user_profile/screens/comment_screen.dart';
 import 'package:connect_u/features/user_profile/screens/edit_profile_screen.dart';
 import 'package:connect_u/features/user_profile/screens/user_profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -53,6 +54,11 @@ final loggedInRoute = RouteMap(routes: {
   '/add-post/:type': (routeData) => MaterialPage(
         child: AddPostTypeScreen(
           type: routeData.pathParameters['type']!,
+        ),
+      ),
+  '/post/:postId/comments': (routeData) => MaterialPage(
+        child: CommentsScreen(
+          postId: routeData.pathParameters['postId']!,
         ),
       ),
 });
